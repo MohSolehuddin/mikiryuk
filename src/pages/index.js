@@ -8,6 +8,6 @@ export default function Home() {
     <body>
       <Button color="red">klik dong</Button>
       <Button color="blue">klik dong</Button>
-    <body/>
+    </body>
   );
 }
