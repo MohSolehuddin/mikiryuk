@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <body className="h-full w-full bg-slate-100 flex justify-center">
+    <body className="min-h-full gap-1 w-full bg-slate-100 flex justify-center">
       <Button color="red">klik dong</Button>
       <Button color="blue">klik dong</Button>
     </body>
