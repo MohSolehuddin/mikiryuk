@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from "@/components/Button";
 import { CardContainer, CardItem } from "@/components/Card";
 import { Inter } from "next/font/google";
@@ -43,11 +44,13 @@ export default function Home() {
             title={item.title}
             paragraph={item.paragraph}
           >
-            klilk
+            klik
           </CardItem>
         ))}
       </CardContainer>
-      <Button color="blue">klik dong</Button>
+      <Link to="/example">
+        <Button>Go to Example</Button>
+      </Link>
     </>
   );
 }
