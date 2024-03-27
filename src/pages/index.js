@@ -6,25 +6,25 @@ const inter = Inter({ subsets: ["latin"] });
 const data = {
   items: [
     {
-      img: "https://unsplash.com/computer?200px*200px",
+      img: "https://.source.unsplash.com/random/200×200?img=1",
       title: "coba",
       link: "https://github.co/ohSolehuddin/",
       paragraph: "hai ini aalaparagraff"
     },
     {
-      img: "https://unsplash.com/computer?200px*200px",
+      img: "https://source.unsplash.com/random/200×200/?img=1",
       title: "coba",
       link: "https://github.co/ohSolehuddin/",
       paragraph: "hai ini aalaparagraff"
     },
     {
-      img: "https://unsplash.com/computer?200px*200px",
+      img: "https://source.unsplash.com/random/200×200/?img=1",
       title: "coba",
       link: "https://github.co/ohSolehuddin/",
       paragraph: "hai ini aalaparagraff"
     },
     {
-      img: "https://unsplash.com/computer?200px*200px",
+      img: "https://source.unsplash.com/random/200×200/?img=1",
       title: "coba",
       link: "https://github.co/ohSolehuddin/",
       paragraph: "hai ini aalaparagraff"
@@ -34,7 +34,7 @@ const data = {
 
 export default function Home() {
   return (
-    <body className="min-h-full w-full bg-slate-100 bg-no-repeat">
+    <>
       <CardContainer>
         {data.items.map((item) => (
           <CardItem
@@ -48,6 +48,6 @@ export default function Home() {
         ))}
       </CardContainer>
       <Button color="blue">klik dong</Button>
-    </body>
+    </>
   );
 }
