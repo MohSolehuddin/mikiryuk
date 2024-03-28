@@ -65,9 +65,9 @@ export default function Home() {
           </CardItem>
         ))}
       </CardContainer>
-      <Link to="/example">
-        <Button>Go to Example</Button>
-      </Link>
+      // <Link to="/example">
+      //   <Button>Go to Example</Button>
+      // </Link>
     </>
   );
 }
