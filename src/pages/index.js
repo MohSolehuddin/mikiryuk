@@ -24,12 +24,29 @@ const data = {
       link: "https://github.co/ohSolehuddin/",
       paragraph: "hai ini aalaparagraff"
     },
+      img: "https://.source.unsplash.com/random/200×200?img=1",
+      title: "coba",
+      link: "https://github.co/ohSolehuddin/",
+      paragraph: "hai ini aalaparagraff"
+    },
     {
       img: "https://source.unsplash.com/random/200×200/?img=1",
       title: "coba",
       link: "https://github.co/ohSolehuddin/",
       paragraph: "hai ini aalaparagraff"
-    }
+    },
+    {
+      img: "https://source.unsplash.com/random/200×200/?img=1",
+      title: "coba",
+      link: "https://github.co/ohSolehuddin/",
+      paragraph: "hai ini aalaparagraff"
+    },
+    {
+      img: "https://source.unsplash.com/random/200×200/?img=1",
+      title: "coba",
+      link: "https://github.co/ohSolehuddin/",
+      paragraph: "hai ini aalaparagraff"
+    },
   ]
 };
 

@@ -3,9 +3,10 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
+      <title>mikir yuk</title>
       <Head />
       <body>
-        <Main className="bg-no-repeat min-h-full bg-slate-500"/>
+        <Main/>
         <NextScript />
       </body>
     </Html>
