@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import { CardContainer, CardItem } from "@/components/Card";
-import ScrollComponent from "@/components/ScrollComponent";
+import ScrollComponent from "@/components/ScrollContainer";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -84,7 +84,7 @@ const data = {
 export default function Home() {
   return (
     <main className="max-w-full overflow-x-hidden">
-      <ScrollComponent>
+      <ScrollContainer>
         <CardContainer>
           {data.items.map((item) => (
             <CardItem
@@ -98,7 +98,7 @@ export default function Home() {
             </CardItem>
           ))}
         </CardContainer>
-      </ScrollComponent>
+      </ScrollContainer>
     </main>
   );
 }
