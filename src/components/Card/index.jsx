@@ -5,7 +5,7 @@ export function CardContainer(props) {
   const { children } = props;
   return (
     <section id="card-container" className="bg-slate-50 rounded-2xl p-1 mx-auto
-    h-[600px] w-full px-1 flex min-w-fit gap-2">
+    h-[500px] w-full px-1 flex min-w-fit gap-2">
       {children}
     </section>
   );
@@ -18,7 +18,7 @@ export function CardItem(props) {
       <Image className="w-full h-[300px]" src={img} alt={title} with={300}
       height={300} />
       <h3 className="text-2xl font-bold">{title}</h3>
-      <p className="text-justify">{paragraph}</p>
+      <p className="text-justify mb-4">{paragraph}</p>
       <Button link={link}>{children}</Button>
     </section>
   );
