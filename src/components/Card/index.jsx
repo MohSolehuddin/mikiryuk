@@ -4,7 +4,8 @@ import Image from "next/image";
 export function CardContainer(props) {
   const { children } = props;
   return (
-    <section id="card-container" className="bg-slate-50 rounded-2xl p-1 mx-auto h-[400px] w-full px-1 flex w-fit">
+    <section id="card-container" className="bg-slate-50 rounded-2xl p-1 mx-auto
+    h-[400px] w-full px-1 flex w-fit gap-2">
       {children}
     </section>
   );

@@ -1,6 +1,6 @@
-// import { Link } from 'react-router-dom';
 import Button from "@/components/Button";
 import { CardContainer, CardItem } from "@/components/Card";
+import ScrollComponent from "@/components/ScrollComponent";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -83,20 +83,22 @@ const data = {
 
 export default function Home() {
   return (
-    <main>
-      <CardContainer>
-        {data.items.map((item) => (
-          <CardItem
-            key={item.title}
-            img={item.img}
-            title={item.title}
-            paragraph={item.paragraph}
-            link={item.link}
-          >
-            {item.link}
-          </CardItem>
-        ))}
-      </CardContainer>
+    <main className="max-w-full overflow-x-hidden">
+      <ScrollComponent>
+        <CardContainer>
+          {data.items.map((item) => (
+            <CardItem
+              key={item.title}
+              img={item.img}
+              title={item.title}
+              paragraph={item.paragraph}
+              link={item.link}
+            >
+            
+            </CardItem>
+          ))}
+        </CardContainer>
+      </ScrollComponent>
     </main>
   );
 }
