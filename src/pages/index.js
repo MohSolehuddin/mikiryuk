@@ -7,16 +7,76 @@ const inter = Inter({ subsets: ["latin"] });
 const data = {
   items: [
     {
-      img: "https://.source.unsplash.com/random/200×200?img=1",
-      title: "coba",
-      link: "https://github.co/ohSolehuddin/",
-      paragraph: "hai ini aalaparagraff",
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
     },
     {
-      img: "https://source.unsplash.com/random/200×200/?img=1",
-      title: "coba",
-      link: "https://github.co/ohSolehuddin/",
-      paragraph: "hai ini aalaparagraff",
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
+    },
+    {
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
+    },
+    {
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
+    },
+    {
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
+    },
+    {
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
+    },
+    {
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
+    },
+    {
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
+    },
+    {
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
+    },
+    {
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
+    },
+    {
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
+    },
+    {
+      img: "public/Solehuddin.png",
+      title: "Solehuddin",
+      link: "https://github.com/MohSolehuddin/",
+      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
     },
   ]
 };
@@ -27,12 +87,12 @@ export default function Home() {
       <CardContainer>
         {data.items.map((item) => (
           <CardItem
-            key={item.title} // tambahkan key properti untuk setiap item dalam map
             img={item.img}
             title={item.title}
             paragraph={item.paragraph}
+            link={item.link}
           >
-            klik
+            {item.link}
           </CardItem>
         ))}
       </CardContainer>

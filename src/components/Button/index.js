@@ -1,6 +1,7 @@
 export default function Button(props) {
-  let {children, color} = props;
+  let {children = "Klik", color, link} = props;
   return (
-    <button className="rounded-2xl mx-auto py-2 px-4 text-slate-100 bg-indigo-400 ">{children}</button>
+    <a className="rounded-2xl mx-auto py-4 px-10 text-slate-100
+    bg-indigo-400 font-bold hover:bg-indigo-500" href={link} about="_blank">{children}</a>
     )
 }

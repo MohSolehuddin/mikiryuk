@@ -17,7 +17,7 @@ export function CardItem(props) {
       <Image className="w-full h-[200px]" src={img} alt={title} />
       <h3 className="text-2xl font-bold">{title}</h3>
       <p className="text-justify">{paragraph}</p>
-      <Button>{children}</Button>
+      <Button link={link}>{children}</Button>
     </section>
   );
 }
