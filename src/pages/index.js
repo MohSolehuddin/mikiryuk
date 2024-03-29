@@ -87,6 +87,7 @@ export default function Home() {
       <CardContainer>
         {data.items.map((item) => (
           <CardItem
+            key={item.title}
             img={item.img}
             title={item.title}
             paragraph={item.paragraph}
