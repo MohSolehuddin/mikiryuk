@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import { CardContainer, CardItem } from "@/components/Card";
-import ScrollComponent from "@/components/ScrollContainer";
+import ScrollContainer from "@/components/ScrollContainer";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
