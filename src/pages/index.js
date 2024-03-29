@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Button from "@/components/Button";
 import { CardContainer, CardItem } from "@/components/Card";
 import { Inter } from "next/font/google";
@@ -10,49 +10,20 @@ const data = {
       img: "https://.source.unsplash.com/random/200×200?img=1",
       title: "coba",
       link: "https://github.co/ohSolehuddin/",
-      paragraph: "hai ini aalaparagraff"
+      paragraph: "hai ini aalaparagraff",
     },
     {
       img: "https://source.unsplash.com/random/200×200/?img=1",
       title: "coba",
       link: "https://github.co/ohSolehuddin/",
-      paragraph: "hai ini aalaparagraff"
-    },
-    {
-      img: "https://source.unsplash.com/random/200×200/?img=1",
-      title: "coba",
-      link: "https://github.co/ohSolehuddin/",
-      paragraph: "hai ini aalaparagraff"
-    },
-      img: "https://.source.unsplash.com/random/200×200?img=1",
-      title: "coba",
-      link: "https://github.co/ohSolehuddin/",
-      paragraph: "hai ini aalaparagraff"
-    },
-    {
-      img: "https://source.unsplash.com/random/200×200/?img=1",
-      title: "coba",
-      link: "https://github.co/ohSolehuddin/",
-      paragraph: "hai ini aalaparagraff"
-    },
-    {
-      img: "https://source.unsplash.com/random/200×200/?img=1",
-      title: "coba",
-      link: "https://github.co/ohSolehuddin/",
-      paragraph: "hai ini aalaparagraff"
-    },
-    {
-      img: "https://source.unsplash.com/random/200×200/?img=1",
-      title: "coba",
-      link: "https://github.co/ohSolehuddin/",
-      paragraph: "hai ini aalaparagraff"
+      paragraph: "hai ini aalaparagraff",
     },
   ]
 };
 
 export default function Home() {
   return (
-    <>
+    <main>
       <CardContainer>
         {data.items.map((item) => (
           <CardItem
@@ -65,9 +36,6 @@ export default function Home() {
           </CardItem>
         ))}
       </CardContainer>
-      // <Link to="/example">
-      //   <Button>Go to Example</Button>
-      // </Link>
-    </>
+    </main>
   );
 }
