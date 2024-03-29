@@ -1,4 +1,5 @@
 import Button from '@/components/Button';
+import Image from "next/image";
 
 export function CardContainer(props) {
   const { children } = props;
