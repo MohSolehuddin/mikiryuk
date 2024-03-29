@@ -13,7 +13,7 @@ export function CardItem(props) {
   const { img, title, paragraph, children, link} = props;
   return (
     <section className="w-[300px] bg-slate-100 max-h-full p-1">
-      <img className="w-full h-[200px]" src={img} alt={title} />
+      <Image className="w-full h-[200px]" src={img} alt={title} />
       <h3 className="text-2xl font-bold">{title}</h3>
       <p className="text-justify">{paragraph}</p>
       <Button>{children}</Button>
