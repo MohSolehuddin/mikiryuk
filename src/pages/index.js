@@ -7,19 +7,19 @@ const inter = Inter({ subsets: ["latin"] });
 const data = {
   items: [
     {
-      img: "../../public/Solehuddin.png",
+      img: "/solehuddin.png",
       title: "Solehuddin",
       link: "https://github.com/MohSolehuddin/",
       paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
     },
     {
-      img: "../../public/Solehuddin.png",
+      img: "solehuddin.png",
       title: "Solehuddin",
       link: "https://github.com/MohSolehuddin/",
       paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
     },
     {
-      img: "../../public/Solehuddin.png",
+      img: "/solehuddin.png",
       title: "Solehuddin",
       link: "https://github.com/MohSolehuddin/",
       paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",

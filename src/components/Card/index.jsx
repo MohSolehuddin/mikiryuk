@@ -15,7 +15,8 @@ export function CardItem(props) {
   const { img, title, paragraph, children, link} = props;
   return (
     <section className="w-[300px] bg-slate-100 max-h-full p-1">
-      <Image className="w-full h-[200px]" src={img} alt={title} />
+      <Image className="w-full h-[200px]" src={img} alt={title} with={200}
+      height={200} />
       <h3 className="text-2xl font-bold">{title}</h3>
       <p className="text-justify">{paragraph}</p>
       <Button link={link}>{children}</Button>
