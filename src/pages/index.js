@@ -187,7 +187,7 @@ export default function Home() {
           ))}
         </CardContainer>
       </ScrollContainer>
-      <CardContainer>
+      <CardContainer customStyle={`w-full flex-no-wrap`}>
       {data.items.map((item)=>(
         <CardItem
           key={item.title}
@@ -195,7 +195,6 @@ export default function Home() {
           title={item.title}
           paragraph={item.paragraph}
           link={item.link}
-          customStyle={`w-full flex-wrap`}
         />
       ))}
       </CardContainer>
