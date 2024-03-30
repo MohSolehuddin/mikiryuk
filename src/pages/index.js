@@ -183,11 +183,22 @@ export default function Home() {
               title={item.title}
               paragraph={item.paragraph}
               link={item.link}
-            >
-            </CardItem>
+            />
           ))}
         </CardContainer>
       </ScrollContainer>
+      <CardContainer>
+      {data.item.map((item)=>{
+        <CardItem
+          key={item.title}
+          img={item.img}
+          title={item.title}
+          paragraph={item.paragraph}
+          link={item.link}
+          customStyle={`full flex-no-wrap`}
+        />
+      })}
+      </CardContainer>
     </main>
   );
 }
