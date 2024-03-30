@@ -195,7 +195,7 @@ export default function Home() {
           title={item.title}
           paragraph={item.paragraph}
           link={item.link}
-          customStyle={`full flex-no-wrap`}
+          customStyle={`w-full flex-no-wrap`}
         />
       })}
       </CardContainer>

@@ -2,10 +2,10 @@ import Button from '@/components/Button';
 import Image from "next/image";
 
 export function CardContainer(props) {
-  const { children, customStyle ="fit" } = props;
+  const { children, customStyle ="min-w-fit" } = props;
   return (
     <section id="card-container" className={`bg-slate-50 rounded-2xl p-1 mx-auto
-    h-[500px] w-full px-1 flex w-${customStyle} gap-2`}>
+    h-[500px] w-full px-1 flex ${customStyle} gap-3`}>
       {children}
     </section>
   );
