@@ -188,7 +188,7 @@ export default function Home() {
         </CardContainer>
       </ScrollContainer>
       <CardContainer>
-      {data.item.map((item)=>{
+      {data.items.map((item)=>{
         <CardItem
           key={item.title}
           img={item.img}
