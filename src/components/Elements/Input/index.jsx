@@ -1,5 +1,5 @@
-import Label from "./Label";
-import InputElement from "./InputElement";
+import Label from "@/components/Elements/Input/Label";
+import InputElement from "@/components/Elements/Input/InputElement";
 
 export default function Input({fotIt ="username", typeInput="text"}) {
   return (
