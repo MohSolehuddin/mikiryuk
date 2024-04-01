@@ -1,8 +1,7 @@
 import Label from "./Label";
 import InputElement from "./InputElement";
 
-export default function Input(props) {
-  {fotIt ="username", typeInput="text"} = props;
+export default function Input({fotIt ="username", typeInput="text"}) {
   return (
     <>
       <Label forIt={forIt}/>
