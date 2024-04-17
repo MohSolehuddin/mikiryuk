@@ -1,176 +1,21 @@
+import {useState} from "react";
 import Button from "@/components/Button";
 import { CardContainer, CardItem } from "@/components/Card";
 import ScrollContainer from "@/components/ScrollContainer";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-const data = {
-  items: [
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-    {
-      img: "/solehuddin.png",
-      title: "Solehuddin",
-      link: "https://github.com/MohSolehuddin/",
-      paragraph: "hallo everyone, My name is MohSolehuddin, I am a Software a engineer, You can hire me to Front End or Back End Project",
-    },
-  ]
+const getData = async (link) => {
+  const response = await fetch(link, {
+    method: 'GET'
+  })
+  const result = await response.json();
+  return result.then((data)=>{
+    return data;
+  }).catch(e=>console.error(e))
 };
 
+const inter = Inter({ subsets: ["latin"] });
+const data = getData("/api/product")
 export default function Home() {
   return (
     <main className="max-w-full overflow-x-hidden">
@@ -198,6 +43,7 @@ export default function Home() {
         />
       ))}
       </CardContainer>
+      <Button>+</Button>
     </main>
   );
 }
