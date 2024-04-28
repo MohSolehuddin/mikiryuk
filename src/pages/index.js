@@ -1,35 +1,40 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import Button from "@/components/Button";
 import { CardContainer, CardItem } from "@/components/Card";
 import ScrollContainer from "@/components/ScrollContainer";
 import { Inter } from "next/font/google";
 
 const getData = async (link) => {
-  const response = await fetch(link, {
-    method: 'GET'
-  })
-  const result = await response.json();
-  return result.then((data)=>{
-    return data;
-  }).catch(e=>console.error(e))
+  try {
+    const response = await fetch(link, {
+      method: 'GET'
+    });
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
 };
 
 const inter = Inter({ subsets: ["latin"] });
+
 export default function Home() {
-  [data, setData] = useState(null);
-  
-  useEffect(()=>{
-    const fectData = async() => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
       const result = await getData("/api/product");
       setData(result);
     };
-    fectData();
+    fetchData();
   }, []);
+
   return (
     <main className="max-w-full overflow-x-hidden">
       <ScrollContainer>
         <CardContainer>
-          {data.items.map((item) => (
+          {data && data.items.map((item) => (
             <CardItem
               key={item.title}
               img={item.img}
@@ -41,7 +46,7 @@ export default function Home() {
         </CardContainer>
       </ScrollContainer>
       <CardContainer customStyle={`w-full flex-wrap`}>
-      {data.items.map((item)=>(
+      {data && data.items.map((item)=>(
         <CardItem
           key={item.title}
           img={item.img}
