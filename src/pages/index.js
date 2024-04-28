@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import Button from "@/components/Button";
 import { CardContainer, CardItem } from "@/components/Card";
 import ScrollContainer from "@/components/ScrollContainer";
@@ -17,6 +17,15 @@ const getData = async (link) => {
 const inter = Inter({ subsets: ["latin"] });
 const data = getData("/api/product")
 export default function Home() {
+  [data, setData] = useState(null);
+  
+  useEffect(()=>{
+    const fectData = async() => {
+      const result = await getData("/api/product");
+      setData(result);
+    };
+    fectData();
+  }, []);
   return (
     <main className="max-w-full overflow-x-hidden">
       <ScrollContainer>
