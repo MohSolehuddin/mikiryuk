@@ -15,7 +15,6 @@ const getData = async (link) => {
 };
 
 const inter = Inter({ subsets: ["latin"] });
-const data = getData("/api/product")
 export default function Home() {
   [data, setData] = useState(null);
   
